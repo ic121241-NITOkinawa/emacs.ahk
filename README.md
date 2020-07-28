@@ -26,7 +26,7 @@
   <tr>
     <td>C-m</td>
     <td>newline</td>
-    <td>改行</td>
+    <td>Enterキーの入力</td>
   </tr>
   <tr>
     <td>C-s</td>
