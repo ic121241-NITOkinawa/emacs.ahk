@@ -25,6 +25,8 @@ is_target()
     Return 1
   IfWinActive,ahk_class Vim ; GVIM
     Return 1
+  IfWinActive,ahk_class VirtualConsoleClass
+    Return 1
   IfWinActive,ahk_class MozillaWindowClass ; Firefox
     Return 0
 ;  IfWinActive,ahk_class SWT_Window0 ; Eclipse
