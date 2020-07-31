@@ -164,73 +164,9 @@ backward_char()
   Else
     newline()
   Return
-<<<<<<< HEAD
 
 ;; search
 !s::
-=======
-^i::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    indent_for_tab_command()
-  Return
-^s::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-  {
-    If is_pre_x
-      save_buffer()
-    Else
-      isearch_forward()
-  }
-  Return
-^r::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    isearch_backward()
-  Return
-^w::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    kill_region()
-  Return
-!w::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    kill_ring_save()
-  Return
-^y::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    yank()
-  Return
-^/::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    undo()
-  Return  
-  
-;$^{Space}::
-^vk20sc039::
-  If is_target()
-    Send {CtrlDown}{Space}{CtrlUp}
-  Else
-  {
-    If is_pre_spc
-      is_pre_spc = 0
-    Else
-      is_pre_spc = 1
-  }
-  Return
-^@::
->>>>>>> parent of 2b14497... Fixed the issue #3
   If is_target()
     Send %A_ThisHotkey%
   Else
